@@ -1,6 +1,23 @@
 package com.RoomInventory;
 import java.util.*;
+/*
+Project - HotelRoomBookingApp
+UseCase 1 -   Room Inventory Setup & Management
+Key Concepts
+*Fast lookup
+*Centralized inventory
+*Data consistency
 
+Key Requirements
+*Initialize room types (Single, Double, Suite)
+*Store room counts and prices
+*Support dynamic inventory updates
+*Provide real-time availability status
+
+@author HarsheenKaur
+@version 1.0
+
+*/
 public class Main {
 	static final Map<String, Integer> roomCount = new HashMap<>();
 	static final Map<String, Double> roomPrice = new HashMap<>();
@@ -21,12 +38,12 @@ public class Main {
 
 			// Advanced switch with arrow syntax
 			switch (command) {
-			case "book" -> {
+			case "book" -> {                        //book room between suite, single, double
 				System.out.print("Enter room type (Suite/Single/Double): ");
 				String roomChoice = sc.nextLine().trim();
 				BookRooms.bookRoom(roomChoice,roomCount);
 			}
-			case "update" -> {
+			case "update" -> {						//update the price of the rooms
 				System.out.print("Enter room type to update price: ");
 				String updateRoom = sc.nextLine().trim();
 				System.out.print("Enter new price: ");
@@ -34,7 +51,7 @@ public class Main {
 				sc.nextLine(); // consume newline
 				UpdatePrice.updatePrice(updateRoom, newPrice,roomPrice);
 			}
-			case "show" -> ShowAvailability.showAvailability(roomCount);
+			
 			case "exit" -> {
 				System.out.println("Exiting system. Goodbye!");
 				sc.close();
