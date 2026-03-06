@@ -3,7 +3,7 @@ package com.RoomInventory;
 import java.util.Map;
 
 public class InitialiseRooms {
-	static void initializeRooms(Map<String, Integer> roomCount , Map<String, Double> roomPrice ) {
+	public static void initializeRooms(Map<String, Integer> roomCount , Map<String, Double> roomPrice ) {
 		roomCount.put("Suite", 3);
 		roomCount.put("Single", 13);
 		roomCount.put("Double", 15);

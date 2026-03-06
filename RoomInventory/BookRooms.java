@@ -3,7 +3,7 @@ package com.RoomInventory;
 import java.util.Map;
 
 public class BookRooms {
-	 static void bookRoom(String roomChoice,Map<String, Integer> roomCount) {
+	 public static void bookRoom(String roomChoice,Map<String, Integer> roomCount) {
 		if (!roomCount.containsKey(roomChoice)) {
 			System.out.println(" Invalid room type!");
 		}
