@@ -12,6 +12,6 @@ HashMap<String, Double>
 
 ## Features
 
--Display available room types
--Show room prices
--Validate room availability
+- Display available room types
+- Show room prices
+- Validate room availability
