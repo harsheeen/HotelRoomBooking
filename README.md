@@ -4,7 +4,7 @@
 
 This feature implements the hotel room inventory system, which serves as the central data source for all room-related operations
 
-##Data Structures
+## Data Structures
 
 HashMap<String, Integer>
 
