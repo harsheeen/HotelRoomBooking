@@ -12,6 +12,6 @@ LinkedList implementation
 
 ## Features
 
-Fair request handling
-Predictable booking order
-Avoides request conflicts
+- Fair request handling
+- Predictable booking order
+- Avoides request conflicts
