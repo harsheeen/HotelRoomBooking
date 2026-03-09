@@ -1,6 +1,6 @@
-#Use Case 1 - Room Inventory Setup & Management
+# Use Case 1 - Room Inventory Setup & Management
 
-##Purpose
+## Purpose
 
 This feature implements the hotel room inventory system, which serves as the central data source for all room-related operations
 
@@ -10,7 +10,7 @@ HashMap<String, Integer>
 
 HashMap<String, Double>
 
-#Feature
+# Feature
 
 - Add new room types
 -Store room prices
